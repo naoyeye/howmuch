@@ -1,0 +1,20 @@
+{
+  "name": "howmuch",
+  "version": "0.0.1",
+  "description": "┑(￣Д ￣)┍",
+  "main": "src/server.js",
+  "scripts": {
+    "run": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naoyeye/howmuch.git"
+  },
+  "author": "J.Y Han - https://github.com/LIU9293",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}
