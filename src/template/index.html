@@ -368,16 +368,18 @@
         pending = true;
 
         var $t = $(this);
-        $t.html('正在计算').addClass('disabled');
 
 
-        var name = $('input').val();
+        var name = $('input').val().trim();
         var len = name.length;
         var cost = 0;
         if (!len) {
           alert('尚未填写名称');
-          return false;
+          return;
         }
+
+        $t.html('正在计算').addClass('disabled');
+        
         cost = _.random(len, 8, true);
         var fixNum = _.random(3);
         var costFixed = cost.toFixed(fixNum);
